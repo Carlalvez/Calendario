@@ -38,4 +38,14 @@ public class Calendario
         }
         return noNumDay + "-" + noNumMonth + "-" + noNumYear.substring(2,4);
   }
+  
+  /**
+  * Introduccion de datos por parte del usuario.
+  */
+  public void fijarFecha (int setDay, int setMonth, int setYear) 
+  {
+       day = setDay;
+       month = setMonth;
+       year = setYear;
+  }
 }
