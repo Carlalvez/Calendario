@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Calendario
+comment1.params=
+comment1.target=Calendario()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Calendario\r\n
+comment2.params=
+comment2.target=java.lang.String\ obtenerFecha()
+comment2.text=\r\n\ (dd-mm-yy)\ 8\ caracteres.\ \r\n
+numComments=3
