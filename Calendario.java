@@ -48,4 +48,28 @@ public class Calendario
        month = setMonth;
        year = setYear;
   }
+  
+  /**
+   * avanza calendario 1 dia.
+   */
+  public void avanzarDia ()
+  {
+         if (day == 30)
+        {
+            day = 01;
+            if (month == 12) 
+            {
+                month = 01;
+                year += 1;                
+            }
+            else 
+            {
+                month += 1;
+            }
+        }
+        else 
+        {
+            day += 1;
+        }
+    } 
 }
