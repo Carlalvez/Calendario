@@ -9,54 +9,47 @@ public class Calendario
   private int year;
   
   /**
-     * Constructor for objects of class Calendario
+     * Constructor for objects of class BasicCalendar.
      */
     public Calendario()
     {
-        day = 1;
-        month = 1;
-        year = 2001; //primer año
+        day = 01;
+        month = 01;
+        year = 01; //primer año
     }
 
-    /**
+  /**
      * (dd-mm-yy) 8 caracteres. 
      */
-    public String obtenerFecha ()
+    public String getdate ()
     {
-        String noNumDay = String.valueOf(day);
-        String noNumMonth = String.valueOf(month);
-        String noNumYear = String.valueOf(year);
-        // If the day has only one character, put a zero before day.
-        if (noNumDay.length() < 2)
-        {
-            noNumDay = "0" + String.valueOf(day);
-        }
-        // If the month has only one character, put a zero before day.
-        if (noNumMonth.length() < 2)
-        {
-            noNumMonth = "0" + String.valueOf(month);
-        }
-        return noNumDay + "-" + noNumMonth + "-" + noNumYear.substring(2,4);
+        String date = (day+100) + "-" + (month+100) + "-" + (year+100); 
+        date = date.substring(1,4) 
+               + date.substring(5,8) 
+               + date.substring(9,11);
+        return date;
   }
   
   /**
-  * Introduccion de datos por parte del usuario.
+  ** Introduccion de datos por parte del usuario.
   */
-  public void fijarFecha (int setDay, int setMonth, int setYear) 
+  public void setDate (int setDay, int setMonth, int setYear)
   {
-       day = setDay;
-       month = setMonth;
-       year = setYear;
+      day = setDay;
+      month = setMonth;
+      // How we only want to store two numbers
+      // and the value is between 2000 - 2099
+      year = setYear - 2000;
   }
   
   /**
-   * avanza calendario 1 dia.
+   * * Set a specific date.
    */
-  public void avanzarDia ()
+  public void addOneDay ()
   {
-         if (day == 30)
+        if (day == 30)
         {
-            day = 01;
+          day = 01;
             if (month == 12) 
             {
                 month = 01;
@@ -66,7 +59,7 @@ public class Calendario
             {
                 month += 1;
             }
-        }
+        }// Check if adding a day changes the month or year.
         else 
         {
             day += 1;
