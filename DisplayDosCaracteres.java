@@ -1,19 +1,9 @@
-/**
- * La clase DisplayDosCarcateres representa un display que muestra valores numéricos enteros 
- * desde 1 a un valor limite. El valor del display se muestra siempre con dos caracteres. 
- * El valor limite se especifica cuando se crea el objeto. Se puede hacer avanzar el valor 
- * mostrado a traves de un método, de tal manera que si el valor llega el limite vuelve a uno.
- * 
- * @author Miguel Bayon
- * @version 1.0
- */
 public class DisplayDosCaracteres
 {
     // El valor limite que nunca alcanza el display y en el que vuelve a 1
     private int limite;
     // El valor actual que almacena el display
     private int valorAlmacenado;
-
 
     /**
      * Constructor de la clase DisplayDosCaracteres

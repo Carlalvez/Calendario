@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=DisplayDosCaracteres
+comment1.params=limiteDisplay
+comment1.target=DisplayDosCaracteres(int)
+comment1.text=\r\n\ Constructor\ de\ la\ clase\ DisplayDosCaracteres\r\n\r\n\ @param\ limiteDisplay\ El\ valor\ m\u00E1ximo\ que\ ya\ no\ puede\ mostrar\ el\ display\r\n
+comment2.params=
+comment2.target=int\ getValorAlmacenado()
+comment2.text=\r\n\ Devuelve\ el\ valor\ actual\ como\ n\u00FAmero\ entero\r\n
+comment3.params=
+comment3.target=java.lang.String\ getTextoDelDisplay()
+comment3.text=\r\n\ Devuelve\ el\ valor\ del\ display\ como\ cadena\ de\ caracteres\ de\ longitud\ 2\r\n
+comment4.params=nuevoValor
+comment4.target=void\ setValorAlmacenado(int)
+comment4.text=\r\n\ Fija\ un\ nuevo\ valor\ para\ el\ display.\ Si\ el\ nuevo\ valor\ no\ es\ legal,\ \r\n\ entonces\ no\ hace\ nada.\r\n
+comment5.params=
+comment5.target=void\ incrementaValorAlmacenado()
+comment5.text=\r\n\ Incrementa\ el\ valor\ del\ display.\ Si\ llega\ al\ limite\ cambia\ a\ uno.\r\n
+numComments=6

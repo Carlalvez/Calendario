@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=FechaYHora
+comment0.text=\r\n\r\n\ @author\ (Carlos\ Alvarez)\r\n\ @version\ (21/02/2018)\r\n
+comment1.params=
+comment1.target=FechaYHora()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ FechaYHora\r\n
+comment2.params=
+comment2.target=void\ updateDisplay()
+comment2.text=\r\n\ Update\ the\ internal\ string\ that\ represents\ the\ display.\r\n
+comment3.params=
+comment3.target=java.lang.String\ getFechaYHora()
+comment3.text=\r\n\ Return\ the\ current\ time\ of\ this\ display\ in\ the\ format\ HH\:MM.\r\n
+comment4.params=setMin\ setHour\ setDay\ setMonth\ setYear
+comment4.target=void\ fijarFechaYHora(int,\ int,\ int,\ int,\ int)
+comment4.text=\r\n\ Set\ the\ time\ and\ the\ date\r\n
+comment5.params=
+comment5.target=void\ avanzar()
+comment5.text=\r\n\ \r\n
+numComments=6
